@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'kindergarten';
-    background-image: url('waterbackground.png');
+    background-image: url('Images/waterbackground.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -145,7 +145,11 @@ body {
 /* END OF NAV */
 
 
-
+.fade-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .clickable-area {
     cursor: pointer;
@@ -157,8 +161,11 @@ body {
 .fade-image,
 .fade-text {
     position: absolute;
-    width: 400px;
-    margin: 200px 0px 0px 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 80%;
+    margin: 100px 0px 0px 50px;
     border-radius: 15px;
     height: auto;
     transition: opacity 0.5s ease-in-out;
@@ -166,7 +173,7 @@ body {
 }
 
 .fade-text {
-    width: 400px;
+    width: 80%;
         height: auto;
     opacity: 0;
     /* Hidden by default */

@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'kindergarten';
-    background-image:url('memorialbackground1.png');
+    background-image:url('Images/memorialbackground1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -326,7 +326,7 @@ input[type="checkbox"]:checked+.image-label .litcandle1, input[type="checkbox"]:
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('memorialbackground1.png');
+    background-image: url('Images/memorialbackground1.png');
     background-size: cover;
     background-position: center;
 
@@ -337,7 +337,7 @@ input[type="checkbox"]:checked+.image-label .litcandle1, input[type="checkbox"]:
 
 /* CHANGE BACKGROUND: First click behavior */
 .hidden-trigger:checked~.full-page-bg {
-    background-image: url('memorialbackground2.png');
+    background-image: url('Images/memorialbackground2.png');
     background-size: cover;
     background-position: center;
     /* New color after first click */

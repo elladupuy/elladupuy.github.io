@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'kindergarten';
-    background-image: url('dowbackground.png');
+    background-image: url('Images/dowbackground.png');
     background-size: cover;
     background-position: center;
 }
@@ -111,7 +111,8 @@ body {
 .DowIntro {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -197,7 +198,6 @@ body {
   
     }
     
-
 } 
 
 .DowIntro_part2 {
@@ -222,7 +222,7 @@ body {
     color: black;
     background-color: rgb(95, 67, 113);
     border-radius: 15px;
-    font-size: 15px;
+    font-size: 18px;
 }
 .pd1 {
     margin: 100px 300px 0 0px

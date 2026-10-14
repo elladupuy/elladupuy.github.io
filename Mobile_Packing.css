@@ -1,9 +1,10 @@
 body {
     margin: 0;
     font-family: 'kindergarten';
-    background-image: url('closetbackground.png');
+    background-image: url('Images/closetbackground.png');
     background-size: cover;
     background-position: center;
+    font-size: 18px;
 }
 
 /* Fonts */
@@ -147,6 +148,7 @@ body {
 .foldingshirt {
     display: flex;
     flex-direction: column;
+    align-content: center;
 }
 .foldingtext {
     width: 300px;
@@ -263,58 +265,56 @@ FIRST BOX*/
  /*TEXT INTERACTIVE 
 FIRST BOX*/
 
-.fadecontainerfather {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .fade-container {
     position: relative;
-    width: 200px;
-    height: 300px;
-    margin: 0 0 60px 60px;
+    width: 300px;
+    height: 400px;
+    margin: 0% 0% 0% 30%;
 }
 
 .fade-container2 {
     position: relative;
+    padding: 0 20 0 200;
     width: 150px;
     height: 200px;
-    margin: 0 0 50px 200px;
+    margin: 0% 30% 0% 0%;
 }
 
 .fade-container3 {
     position: relative;
     width: 300px;
     height: 200px;
-    margin: 0 0 100px 50px;
+    margin: 0% 0% 0% 10%;
 }
 
 .fade-container4 {
     position: relative;
+    margin: 0% 0% 0% 30%;
     width: 300px;
     height: 200px;
-    margin: 0 0 80px 100px;
 }
 
 .fade-container5 {
     position: relative;
+    margin: 0% 20% 0% 0%;
     width: 200px;
     height: 250px;
-    margin: 0 0 10px 200px;
 } 
 
 .fade-container6 {
     position: relative;
+    margin: 0% 0% 0% 10%;
     width: 200px;
     height: 250px;
-    margin: 0 0 100px 100px;
 }
 
 .fade-container7 {
     position: relative;
+    margin: 0% 20% 0% 0%;
     width: 300px;
     height: 500px;
-    margin: 0 0 50px 200px;
 }
 
 
@@ -440,8 +440,15 @@ FIRST BOX*/
     /* Helps text appear faster while loading */
 }
 
+.fadecontainerfather {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .pcdialog {
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     font-family: 'kindergarten';
 }
@@ -451,9 +458,9 @@ FIRST BOX*/
         font-family: 'kindergarten';
         color: black;
         background-color: aliceblue;
-        border-radius: 15px;
-        font-size: 15px;
-        width: 100px;
+        border-radius: 10px;
+        font-size: 20px;
+        width: 300px;
         text-align: center;
 
 }
