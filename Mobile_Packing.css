@@ -1,0 +1,467 @@
+body {
+    margin: 0;
+    font-family: 'kindergarten';
+    background-image: url('closetbackground.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'highway_gothic.normal';
+    src: url('Fonts/HWYGOTH.TTF') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'highway_gothic.wide';
+    src: url('Fonts/HWYGEXPD.TTF') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'highway_gothic.wider';
+    src: url('Fonts/HWYGEXPD.TTF') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'highway_gothic.skinny';
+    src: url('Fonts/HWYGNRRW.TTF') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'highway_gothic.skinnier';
+    src: url('Fonts/HWYGWDE.TTF') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* NAVBAR */
+.NavbarContent {
+    display: flex;
+    flex-direction: row;
+    ;
+}
+
+.navbar {
+    display: inline block;
+    overflow: hidden;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.373);
+    border-radius: 15px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: rgb(226, 64, 177);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Style the button to remove default button appearance */
+.image-button {
+
+    top: 0;
+    left: 0;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Basic styling for the image inside the button */
+.image-button img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* The popover has basic built-in styling, but you can customize it */
+#LeavingLouisianaRoadSign {
+    position: flex;
+    flex-direction: row;
+    background-color: rgb(105, 41, 86);
+    border-color: rgb(116, 34, 100);
+    border-radius: 15px;
+    /* Add more styles like max-width, box-shadow, etc. */
+}
+
+.closebutton {
+    position: absolute;
+    font-family: 'kindergarten';
+    top: 10px;
+    right: 10px;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #de9133;
+}
+
+.navigationlinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+}
+
+.OpeningStatement {
+    position: flex;
+    color: #ffa734;
+    border: none;
+    max-width: 300px;
+    background-color: rgba(229, 85, 186, 0.445);
+    padding: 5px;
+    border-radius: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.closebutton {
+    color: rgb(255, 222, 56);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(255, 176, 49, 0.742);
+    border-radius: 7px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* END OF NAV */
+
+/*FOLDING SHIRT INTERACTIVE*/
+
+.foldingshirt {
+    display: flex;
+    flex-direction: column;
+}
+.foldingtext {
+    width: 300px;
+    height: auto;
+    margin: 100px 100px 0 100px;
+    font-family: 'kindergarten';
+}
+
+.shirtstyle {
+    width: 100px;
+    height: auto;
+    margin: 0px 0px 0px 140px;
+    
+}
+
+.shirt-shuffler input {
+    display: none;
+}
+
+.shirts .shirt {
+    display: none;
+    cursor: pointer;
+    padding: 100px 0 0 0;
+}
+
+
+#shrt-1:checked~.shirts #shirt-1 {
+    display: block;
+}
+
+#shrt-2:checked~.shirts #shirt-2 {
+    display: block;
+}
+
+#shrt-3:checked~.shirts #shirt-3 {
+    display: block;
+}
+
+#shrt-4:checked~.shirts #shirt-4 {
+    display: block;
+}
+
+.shirts img {
+    width: 300px;
+    height: auto;
+}
+
+    /*animated clothing */
+
+
+    /*TEXT INTERACTIVE 
+FIRST BOX*/
+
+.animatedclothes {
+    /* Animation name, duration, timing, and repeat */
+    animation: bounce 2s infinite ease-in-out;
+    display: block;
+    margin: 0 auto;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+        /* Adjust this for bounce height */
+    }
+}
+
+.fade-container {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.clickable-area {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.fade-image,
+.fade-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+    /* Smooth transition */
+}
+
+.fade-text {
+    opacity: 0;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+/* When checkbox is checked, swap opacities */
+#fade-trigger:checked~.clickable-area .fade-image {
+    opacity: 0;
+}
+
+#fade-trigger:checked~.clickable-area .fade-text {
+    opacity: 1;
+}
+
+ /*TEXT INTERACTIVE 
+FIRST BOX*/
+
+.fadecontainerfather {
+    display: flex;
+    flex-direction: column;
+}
+
+.fade-container {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: 0 0 60px 60px;
+}
+
+.fade-container2 {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    margin: 0 0 50px 200px;
+}
+
+.fade-container3 {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 0 0 100px 50px;
+}
+
+.fade-container4 {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 0 0 80px 100px;
+}
+
+.fade-container5 {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    margin: 0 0 10px 200px;
+} 
+
+.fade-container6 {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    margin: 0 0 100px 100px;
+}
+
+.fade-container7 {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    margin: 0 0 50px 200px;
+}
+
+
+.clickable-area,
+.clickable-area2,
+.clickable-area3,
+.clickable-area4,
+.clickable-area5,
+.clickable-area6,
+.clickable-area7 {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.fade-image,
+.fade-text,
+.fade-image2,
+.fade-text2,
+.fade-image3,
+.fade-text3,
+.fade-image4,
+.fade-text4,
+.fade-image5,
+.fade-text5,
+.fade-image6,
+.fade-text6,
+.fade-image7,
+.fade-text7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+    /* Smooth transition */
+}
+
+.fade-text,
+.fade-text2,
+.fade-text3,
+.fade-text4,
+.fade-text5,
+.fade-text6,
+.fade-text7 {
+    opacity: 0;
+    /* Hidden by default */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.294);
+}
+
+/* When checkbox is checked, swap opacities */
+
+#fade-trigger:checked~.clickable-area .fade-image {
+    opacity: 0;
+}
+
+#fade-trigger:checked~.clickable-area .fade-text {
+    opacity: 1;
+}
+
+#fade-trigger2:checked~.clickable-area2 .fade-image2 {
+    opacity: 0;
+}
+
+#fade-trigger2:checked~.clickable-area2 .fade-text2 {
+    opacity: 1;
+}
+
+#fade-trigger3:checked~.clickable-area3 .fade-image3 {
+    opacity: 0;
+}
+
+#fade-trigger3:checked~.clickable-area3 .fade-text3 {
+    opacity: 1;
+}
+
+#fade-trigger4:checked~.clickable-area4 .fade-image4 {
+    opacity: 0;
+}
+
+#fade-trigger4:checked~.clickable-area4 .fade-text4 {
+    opacity: 1;
+}
+
+#fade-trigger5:checked~.clickable-area5 .fade-image5 {
+    opacity: 0;
+}
+
+#fade-trigger5:checked~.clickable-area5 .fade-text5 {
+    opacity: 1;
+}
+
+#fade-trigger6:checked~.clickable-area6 .fade-image6 {
+    opacity: 0;
+}
+
+#fade-trigger6:checked~.clickable-area6 .fade-text6 {
+    opacity: 1;
+}
+#fade-trigger7:checked~.clickable-area7 .fade-image7 {
+    opacity: 0;
+}
+
+#fade-trigger7:checked~.clickable-area7 .fade-text7 {
+    opacity: 1;
+}
+
+/* PACKED CLOTHES DIALOGUE STYLING */
+
+@font-face {
+    font-family: 'SuperBugly';
+    /* Give it a nickname */
+    src: url('fonts/Super\ Bugly.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* Helps text appear faster while loading */
+}
+
+.pcdialog {
+    font-size: 15px;
+    text-align: center;
+    font-family: 'kindergarten';
+}
+.dialogue {
+        display: inline-block;
+        padding: 20px 10px 20px 10px;
+        font-family: 'kindergarten';
+        color: black;
+        background-color: aliceblue;
+        border-radius: 15px;
+        font-size: 15px;
+        width: 100px;
+        text-align: center;
+
+}
+.nextpage {
+    display: flex;
+    justify-content: center;
+}
+.continuebox {
+    width: 300px;
+    height: auto;
+}

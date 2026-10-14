@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yearbook</title>
+
+    <link rel="stylesheet" href="Mobile_Yearbook.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <button popovertarget="LeavingLouisianaRoadSign" class="image-button">
+            <img src="leavinglouisiana.logo.png" alt="Click to view full image" class="leavinglouisianalogo">
+        </button>
+    
+        <!-- The popup content -->
+        <div id="LeavingLouisianaRoadSign" popover>
+    
+            <!-- Optional: a close button inside the popup -->
+            <button popovertarget="LeavingLouisianaRoadSign" popovertargetaction="hide" class="closebutton">Close</button>
+            <div class="NavbarContent">
+                <div class="OpeningStatement">
+                    <div class="os pg1">
+                        Despite this website being about leaving Louisiana I cannot go without acknowledging the fear I have
+                        of leaving
+                        and what
+                        keeps me here.
+    
+                        While I think our systems are completely flawed and not meant to help people escape poverty or
+                        improve our
+                        society or
+                        overall quality of life, I can admit that I have been able to take advantage of the opportunities
+                        given to me.
+                    </div>
+                    <div class="os pg2">
+                        Growing up my parents struggled with substance abuse and poverty throughout my childhood which left
+                        me at a huge
+                        disadvantage in school and participating in extracurricular activities.
+    
+                        It was only through the help of my close knit community that i was able to get through school.
+    
+                        My friend's parents made sure I had rides to practice and paid for any fees.
+    
+                        I was able to find my passion for art through a talented art program my school hosted and I was able
+                        to apply
+                        for
+                        financial aid, state testing and college through the help of attentive advisors.
+                    </div>
+                    <div class="os pg3">
+                        My friends helped me get a job which i still work for to this day, and the community I found at this
+                        job helped
+                        me join
+                        their marketing team that I work for now, which would have been otherwise impossible with my lack of
+                        experience
+                    </div>
+                </div>
+                <div class="navigationlinks">
+                    <a href="Index.html" class="button-link">
+                        HOME
+                    </a>
+                    <a href="yearbook.html" class="button-link">
+                        Boxing Up
+                    </a>
+                    <a href="packing.html" class="button-link">
+                        Closet
+                    </a>
+                    <a href="memorial.html" class="button-link">
+                        Memorial
+                    </a>
+                    <a href="Dow.html" class="button-link">
+                        Dow
+                    </a>
+                    <a href="Outro.html" class="button-link">
+                        Goodbye
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div><!-- END NAVBAR -->
+    
+    </div>
+
+
+    <div class="LeavingLouisiana_Yearbook_Intro">
+        <div class="Yearbook_Intro dialogue">
+            <div class="yi pg1">
+                I look at the boxes and books I have piled in my kitchen. 
+            </div>
+            <div class="yi pg2">
+                Sketch books from moments of boredom in class, yearbooks, textbooks.
+            </div>
+            <div class="yi pg3">
+                and I cant help but reminisce about days spent with my friends in school.
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- FLEXBOX GRIDS BEGINNING -->
+
+    <!-- first grid container, holds first two rows of content -->
+        <div class="first-grid-container"> 
+            <!-- each section holds containers 
+             that hold boxes that hold the content -->
+
+            <!-- SECTION 1 - 4 small boxes 2x2 -->
+            <div class="section1">
+                <div class="two-box-column-container">
+                    <div class="small-box">
+                        <img src="polaroidfriend.png" alt="polaroid of friend" class="polaroidfriend">
+                    </div>
+                    <div class="small-box  container">
+                        <p class="reveal-text dialogue">I think about how she had to fight to wear the same uniform as me.</p>
+                    </div>
+                </div>
+                <div class="two-box-container">
+                    <div class="small-box">
+                        <p class="dialogue">I think about my bestfriend.</p>
+                    </div>
+                    <div class="small-box">
+                        <img src="compositionnotebook.png" alt="composition notebook" class="compositionnotebook">
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 2 - small tall box for skinny long image to replace -->
+            <div class="section2">
+                <div class="small-tall-box">
+                    <img src="Bathroomstall.png" alt="bathroom stall" class="bathroomstall">
+                </div>
+            </div>
+
+            <!-- SECTION 3 - 4 small boxes 2x2 -->
+            <div class="section3">
+                <div class="two-box-column-container">
+                    <div class="small-box">
+                        <img src="schoolgirluniformshirt.png" alt="schoolgirl uniform shirt" class="schoolgirluniformshirt">
+                    </div>
+                    <div class="small-box container">
+                        <p class="reveal-text dialogue IThink">I think about how strong she was.<br> I think about all the students that were so mean to her.
+                    </div>
+                </div>
+                <div class="two-box-container">
+                    <div class="small-box">
+                    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <!-- third grid container
+            takes up two normal rows but has three sections: 5,6,7-->
+
+        <div class="third-grid-container">
+            <!-- each section holds containers 
+                     that hold boxes that hold the content -->
+            
+            <!-- SECTION 6 - big box for clickable sketch book -->
+            <div class="section6">
+                <div class="big-box">
+                    <div class="Yearbook_Interactive">
+                        <a href="#overlay-image">
+                            <div class="yearbookcover">
+                                <img src="sketchbookclickable.png" alt="yearbookcover" class="sketchbookclickable animatedbooks">
+                            </div>
+                        </a>
+                    
+                        <div id="overlay-image" class="overlay">
+                            <a href="#close" class="close-button">&times;</a>
+                            <img src="sketchbookclickable-open.svg" alt="sketchbookopen">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SECTION 5 - four small boxes in columns and row to be 2x2 -->
+            <div class="section5">
+                
+                <div class="two-box-container">
+                
+                    <div class="small-box ">
+                    <p class="dialogue">I think about how small minded people can be in a very tiny, catholic town in Louisiana.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 7 - two small boxes of space but one is empty to create space -->
+            <div class="section7">
+                <div class="small-tall-box">
+                    <img src="eraser.png" alt="eraser" class="eraser">
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- fourth grid container - takes up two normal rows of space -->
+        <div class="fourth-grid-container">
+
+            <!-- SECTION 8 - small tall box for skinny long image to replace -->
+           
+
+            <!-- SECTION 9 - four small boxes in columns and row to be 2x2 -->
+            <div class="section9">
+                <div class="two-box-column-container">
+                    <div class="small-box">
+                        <p class="dialogue">I think about my brother</p>
+                    </div>
+                    <div class="small-box">
+                        <img src="shoe1.png" alt="shoe1" class="shoe1">
+                    </div>
+                </div>
+                <div class="two-box-container">
+                    <div class="small-box">
+                        <img src="gradcap.png" alt="gradcap" class="gradcap">
+                    </div>
+                    <div class="small-box container">
+                        <p class="reveal-text dialogue">I think about how he was turned away instead of helped</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 10 - takes up space of four small boxes;
+                        top row is one short wide box and 
+                        bottom row is two small boxes side by side  -->
+            <div class="section10">
+                <div class="two-box-column-container">
+                    <div class="short-wide-box">
+                        <div class="Yearbook_Interactive2">
+                            <a href="#overlay-image2">
+                                <div class="yearbookcover">
+                                    <img src="diplomaclickable.png" alt="yearbookcover" class="diplomaclickable animatedbooks">
+                                </div>
+                            </a>
+                        
+                            <div id="overlay-image2" class="overlay2">
+                                <a href="#close" class="close-button2">&times;</a>
+                                <img src="diplomaopen.svg" alt="sketchbookopen">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="short-wide-container">
+                        <div class="small-box">
+                            <img src="joint.png" alt="joint" class="joint">
+                        </div>
+                        <div class="small-box">
+                            <img src="backpack.png" alt="booksack" class="booksack">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- fifth grid contaioner - takes up the space of three normal rows -->
+        <div class="fifth-grid-container">
+            <!-- SECTION 11 - 3 small boxes in a column 3x1 -->
+
+            <!-- SECTION 12 - one small tall box and one small box, in a column -->
+            <div class="section12">
+                <div class="small-tall-box">
+                    <img src="lighter.png" alt="lighter" class="lighter">
+                </div>
+            </div>
+            <!-- SECTION 13 - three small boxes in a column 3x1 -->
+            <div class="section13">
+                <div class="small-box">
+                    <img src="brokenbottle.png" alt="broken bottle" class="brokenbottle"> 
+                </div>
+                <div class="small-box container">
+                    <p class="reveal-text dialogue">I think about how different things could be if he had been met with more grace</p>
+                </div>
+                <div class="small-box">
+                    <img src="scissor.png" alt="scissor" class="scissor">
+                </div>
+            </div>
+            <!-- SECTION 14 - short-wide container with two small boxes
+                            and one big blox for clickable image -->
+            <div class="section14">
+                <div class="short-wide-container">
+                    <div class="small-box">
+                        <img src="wrapper.png" alt="candy wrapper" class="wrapper">
+                    </div>
+                    <div class="small-box container">
+                        <p class="reveal-text dialogue">I think its always left a sour taste in my mouth, school in louisiana</p>
+                    </div>
+                </div>
+                <div class="big-box">
+                    <div class="Yearbook_Interactive3">
+                        <a href="#overlay-image3">
+                            <div class="yearbookcover">
+                                <img src="paperballclickable.png" alt="yearbookcover" class="paperballclickable animatedbooks">
+                            </div>
+                        </a>
+                    
+                        <div id="overlay-image3" class="overlay3">
+                            <a href="#close" class="close-button3">&times;</a>
+                            <img src="openpaper.png" alt="sketchbookopen">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+  
+
+    <div class="nextpage">
+        <a href="packing.html" class="button-link">
+            <img src="continuebox.png" alt="shirt" class="nextpageshirt">
+        </a>
+    </div>
+
+</body>
+</html>

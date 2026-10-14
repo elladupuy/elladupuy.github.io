@@ -1,0 +1,393 @@
+body {
+    margin: 0;
+    font-family: 'kindergarten';
+    background-image:url('memorialbackground1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'highway_gothic.normal';
+    src: url('Fonts/HWYGOTH.TTF') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'highway_gothic.wide';
+    src: url('Fonts/HWYGEXPD.TTF') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'highway_gothic.wider';
+    src: url('Fonts/HWYGEXPD.TTF') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'highway_gothic.skinny';
+    src: url('Fonts/HWYGNRRW.TTF') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'highway_gothic.skinnier';
+    src: url('Fonts/HWYGWDE.TTF') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* NAVBAR */
+.NavbarContent {
+    display: flex;
+    flex-direction: row;
+    ;
+}
+
+.navbar {
+    display: inline block;
+    overflow: hidden;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.373);
+    border-radius: 15px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: rgb(226, 64, 177);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Style the button to remove default button appearance */
+.image-button {
+
+    top: 0;
+    left: 0;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Basic styling for the image inside the button */
+.image-button img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* The popover has basic built-in styling, but you can customize it */
+#LeavingLouisianaRoadSign {
+    position: flex;
+    flex-direction: row;
+    background-color: rgb(105, 41, 86);
+    border-color: rgb(116, 34, 100);
+    border-radius: 15px;
+    /* Add more styles like max-width, box-shadow, etc. */
+}
+
+.closebutton {
+    position: absolute;
+    font-family: 'kindergarten';
+    top: 10px;
+    right: 10px;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #de9133;
+}
+
+.navigationlinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+}
+
+.OpeningStatement {
+    position: flex;
+    color: #ffa734;
+    border: none;
+    max-width: 300px;
+    background-color: rgba(229, 85, 186, 0.445);
+    padding: 5px;
+    border-radius: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.closebutton {
+    color: rgb(255, 222, 56);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(255, 176, 49, 0.742);
+    border-radius: 7px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* END OF NAV */
+
+
+Body {
+    background-color: black;
+}
+
+/* memorial interactive candles mechanics and positioning */
+
+.memorialinteractive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-swap-container {
+    margin: 20px 0px 100px 0px;
+}
+input[type="checkbox"] {
+    display: none;
+}
+
+.image-label {
+    cursor: pointer;
+    margin: 20px;
+    display: block;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.candle1,.litcandle1 {
+    position: absolute;
+    margin: 0px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+}
+.litcandle1 {
+    position: absolute;
+    margin: 0px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.litcandle1 {
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked+.image-label .candle1 {
+    opacity: 0;
+}
+   
+input[type="checkbox"]:checked+.image-label .litcandle1, input[type="checkbox"]:checked+.image-label  {
+    opacity: 1;
+}
+/* END OF memorial interactive candles */
+
+.dialogue {
+    color: white;
+    font-family: 'kindergarten';
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 50px 0px;
+    animation: fadeIn 30s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.text-container {
+    height: 350px;
+    color: white;
+        font-family: 'kindergarten';
+        font-size: 20px;
+        text-align: center;
+        margin: 100px;
+    /* Adjust based on font size */
+}
+
+.fade-text {
+    position: flex;
+    opacity: 0;
+    width: 100%;
+    /* Total animation: 15s (3s per line) */
+    animation: fadeEffect 25s;
+}
+
+/* Keyframes: 20% chunk for each of the 5 lines */
+@keyframes fadeEffect {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    /* Fade in */
+    10% {
+        opacity: 1;
+    }
+
+    /* Stay visible */
+    20% {
+        opacity: 0;
+    }
+
+    /* Fade out and stay hidden for rest of cycle */
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+/* Set sequential delays (s per line) */
+.fade-text:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.fade-text:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.fade-text:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.fade-text:nth-child(4) {
+    animation-delay: 15s;
+}
+
+.fade-text:nth-child(5) {
+    animation-delay: 20s;
+}
+
+.candle {
+    
+    width: 200px;
+    height: auto;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+
+/* nav to next story and page through images that reflect elements of the next story*/
+.nextpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.continuebox {    
+    width: 100px;
+    height: auto;
+    margin: 100px;
+    cursor: pointer;
+}
+
+/* Hide the actual checkbox */
+.hidden-trigger {
+    display: none;
+}
+
+/* Base background setup */
+.full-page-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('memorialbackground1.png');
+    background-size: cover;
+    background-position: center;
+
+    /* Default color */
+    z-index: -1;
+    transition: background 0.5s;
+}
+
+/* CHANGE BACKGROUND: First click behavior */
+.hidden-trigger:checked~.full-page-bg {
+    background-image: url('memorialbackground2.png');
+    background-size: cover;
+    background-position: center;
+    /* New color after first click */
+}
+
+/* BUTTON LAYERING: Manage which one is clickable */
+.button-container {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    background: none;
+}
+
+.candle-image {
+    margin: 100px 0 0 0;
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+.step-1-btn,
+.step-2-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Initially hide the second-step link */
+.step-2-link {
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* REVEAL NEXT SITE LINK: After first click is done */
+.hidden-trigger:checked~.button-container .step-2-link {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Hide the first label so only the link is left to click */
+.hidden-trigger:checked~.button-container .step-1-btn {
+    visibility: hidden;
+}

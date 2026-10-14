@@ -1,0 +1,339 @@
+body {
+    margin: 0;
+    font-family: 'kindergarten';
+    background-image: url('LeavingLouisiana.BackgroundImage.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'highway_gothic.normal';
+    src: url('Fonts/HWYGOTH.TTF') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'highway_gothic.wide';
+    src: url('Fonts/HWYGEXPD.TTF') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'highway_gothic.wider';
+    src: url('Fonts/HWYGEXPD.TTF') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'highway_gothic.skinny';
+    src: url('Fonts/HWYGNRRW.TTF') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'highway_gothic.skinnier';
+    src: url('Fonts/HWYGWDE.TTF') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* NAVBAR */
+.NavbarContent {
+    display: flex;
+    flex-direction: row;
+    ;
+}
+
+.navbar {
+    display: inline block;
+    overflow: hidden;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.373);
+    border-radius: 15px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color:rgb(226, 64, 177);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Style the button to remove default button appearance */
+.image-button {
+
+    top: 0;
+    left: 0;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Basic styling for the image inside the button */
+.image-button img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* The popover has basic built-in styling, but you can customize it */
+#LeavingLouisianaRoadSign {
+    position: flex;
+    flex-direction: row;
+    background-color: rgb(105, 41, 86);
+    border-color:rgb(116, 34, 100);
+    border-radius: 15px;
+    /* Add more styles like max-width, box-shadow, etc. */
+}
+
+.closebutton {
+    position: absolute;
+    font-family: 'kindergarten';
+    top: 10px;
+    right: 10px;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #de9133;
+}
+
+.navigationlinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+}
+
+.OpeningStatement {
+    position: flex;
+    color: #ffa734;
+    border: none;
+    max-width: 300px;
+    background-color:rgba(229, 85, 186, 0.445);
+    padding: 5px;
+    border-radius: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.closebutton {
+    color: rgb(255, 222, 56);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color:rgba(255, 176, 49, 0.742);
+    border-radius: 7px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* END OF NAV */
+
+
+.LeavingLouisiana_Intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+/* PHONE TEXT */
+
+.PhoneText_Flexbox {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    margin: 250px 0px 0px 0px;
+}
+
+.Intro_PhoneText {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    max-height: 1400px;
+    padding: 100px;
+}
+
+.PhoneText {
+    padding: 10px 15px 10px 15px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    max-width: 75%;
+    width: auto;
+}
+
+.speaker1 {
+    background-color: #4872b0e7;
+    color: white;
+    margin-left: auto;
+
+}
+
+.friend2 {
+    background-color: rgba(255, 255, 255, 0.833);
+    color: rgb(20, 74, 108);
+    margin-right: auto;
+}
+
+.friend2seperate {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+.friend {
+    background-color: rgba(255, 255, 255, 0.741);
+    color: black;
+    margin: 100px auto;
+}
+
+.friend2faded {
+    background-color: aliceblue;
+    padding: 10px 15px 10px 15px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    max-width: 75%;
+    width: auto;
+    animation: fadeInOut 2s ease-in-out infinite;
+}
+
+
+@keyframes fadeInOut {
+    0% {
+        opacity: .25;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .25;
+    }
+}
+
+#text-toggle {
+    display: none;
+}
+
+.fade-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.text-one,
+.text-two {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.text-two {
+    padding: 10px 0px 10px 0px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    max-width: 75%;
+    width: auto;
+
+    left: 0;
+    opacity: 0;
+    border-radius: 15%;
+}
+
+#text-toggle:checked+.clickable-area .text-one {
+    opacity: 0;
+}
+
+#text-toggle:checked+.clickable-area .text-two {
+    opacity: 1;
+}
+
+
+
+
+.ughcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.ugh {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.647);
+    color:rgb(70, 140, 202);
+    font-size: 50px;
+    margin: 50px 0px 100px 20px;
+    padding: 10px 15px;
+}
+
+.parachuteman {
+    width: 90px;
+    height: 90px;
+}
+
+
+
+.OpeningStatement2 {
+    background-color: #ffffff;
+    width: 200px;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    color: rgb(70, 140, 202);
+    margin: auto;
+
+}
+
+.os1 {
+    text-align: center;
+    max-width: 200px;
+    padding: 0px;
+}
+
+.os2 {
+    text-align: center;
+    max-width: 200px;
+}
+
+.clickableimagecontainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.clickableimagecontainer img {
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+}
+
+.nextpage {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.continuebox {
+    width: 50px;
+    height: auto;
+}
